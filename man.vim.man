@@ -1,0 +1,37 @@
+.TH "man.vim" 7 "May 2021" "" ""
+.
+.SH NAME
+man.vim \- better syntax highlighting for editing manpages
+.
+.SH DESCRIPTION
+The standard syntax file for
+.BR man ( 1 )
+pages in
+.BR vim ( 1 )
+is quite lackluster.
+In fact, it doesn't make sense at all.
+Colors just randomly appear.
+It doesn't even use the more advanced
+.I "nroff.vim"
+syntax file as a base.
+
+This syntax file includes the
+.I "nroff.vim"
+file as a base,
+and it adds additional syntax highlighting specific to common features of
+manpages.
+Currently, it provides adequate syntax highlighting for the
+.BR bold ,
+.IR italic ,
+.IB "and " "alternating " versions
+commonly used in manpages.
+It also provides highlighting for the preprocessor line at the top of a
+manpage.
+The highlighting will warn you when an incorrect preprocessor character has
+been entered.
+.
+.SH SEE ALSO
+.BR man ( 1 ) ,
+.BR vim ( 1 ) ,
+.BR man ( 7 ) ,
+.BR man-pages ( 7 )
