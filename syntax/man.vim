@@ -66,6 +66,9 @@ syn region manB2I start=/"/hs=s+1 skip=/\\"/ end=/"/he=e-1 contained oneline
 if has("folding")
 	syn region manSectionFold start=/^\.\s*SH\s/ end=/^\.\s*SH\s/me=s-1
 		\ transparent fold contains=TOP
+	syn region manSubsectionFold start=/^\.\s*SS\s/
+		\ end=/^\.\s*S\(H\|S\)\s/me=s-1
+		\ transparent fold contains=TOP
 endif
 " }}}
 " highlights {{{
