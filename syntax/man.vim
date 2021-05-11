@@ -62,6 +62,12 @@ syn region manB2I start=/"/hs=s+1 skip=/\\"/ end=/"/he=e-1 contained oneline
 	\ nextgroup=manI2B skipwhite
 " }}}
 " }}}
+" folds {{{
+if has("folding")
+	syn region manSectionFold start=/^\.\s*SH\s/ end=/^\.\s*SH\s/me=s-1
+		\ transparent fold contains=TOP
+endif
+" }}}
 " highlights {{{
 " helper commands to type less {{{
 command! -nargs=1 HiBold hi def <args> term=bold cterm=bold gui=bold
