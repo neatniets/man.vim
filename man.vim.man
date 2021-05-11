@@ -4,6 +4,8 @@
 man.vim \- better syntax highlighting for editing manpages
 .
 .SH DESCRIPTION
+.
+.SS Default man.vim
 The standard syntax file for
 .BR man (1)
 pages in
@@ -14,7 +16,8 @@ Colors just randomly appear.
 It doesn't even use the more advanced
 .I "nroff.vim"
 syntax file as a base.
-
+.
+.SS This man.vim
 This syntax file includes the
 .I "nroff.vim"
 file as a base,
