@@ -1,13 +1,13 @@
-.TH "man.vim" 7 "May 2021" "" ""
+.TH "MAN.VIM" 7 "May 2021" "" ""
 .
 .SH NAME
 man.vim \- better syntax highlighting for editing manpages
 .
 .SH DESCRIPTION
 The standard syntax file for
-.BR man ( 1 )
+.BR man (1)
 pages in
-.BR vim ( 1 )
+.BR vim (1)
 is quite lackluster.
 In fact, it doesn't make sense at all.
 Colors just randomly appear.
@@ -31,7 +31,7 @@ The highlighting will warn you when an incorrect preprocessor character has
 been entered.
 .
 .SH SEE ALSO
-.BR man ( 1 ) ,
-.BR vim ( 1 ) ,
-.BR man ( 7 ) ,
-.BR man-pages ( 7 )
+.BR man (1) ,
+.BR vim (1) ,
+.BR man (7) ,
+.BR man-pages (7)
