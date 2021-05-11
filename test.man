@@ -1,0 +1,31 @@
+'\" e f g p r t v
+.\" asdf
+.\"
+
+.TH asdf
+asdf asdf asdf asdf asdf asdf asdf sadf asdf asdf asdf asdf 
+
+.SH NAME
+asdf, asdf, asdf \- asdf asdf asdf
+.br
+asdf \- asdf asdf asdf asdf asdf
+
+.SH SYNOPSIS
+asdf
+
+.SH DESCRIPTION
+asdf
+
+.SS asdf
+
+.B asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+.I asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+
+.BR asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+.RB asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+
+.IR asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+.RI asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+
+.BI asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
+.IB asdf asdf asdf "asdf asdf" asdf ( asdf ) "asdf asdf asdf"
