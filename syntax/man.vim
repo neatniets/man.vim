@@ -13,6 +13,14 @@ set cpo&vim
 " use nroff as a base
 runtime syntax/nroff.vim
 
+
+" preprocessor line {{{
+syn match manPpStart /\%1l^'\\"/ nextgroup=@manPp skipwhite
+
+syn cluster manPp contains=manPp,manPpErr
+syn match manPpErr /\S\+/ contained nextgroup=@manPp skipwhite
+syn keyword manPp e g p r t v contained nextgroup=@manPp skipwhite
+" }}}
 " font modifiers {{{
 " single char {{{
 syn match manB /^\.\s*B\s/me=e-1 transparent nextgroup=manBword skipwhite
@@ -63,6 +71,10 @@ command! -nargs=1 HiUnderline
 	\ hi def <args> term=underline cterm=underline gui=underline
 command! -nargs=1 HiRoman hi def <args> term=NONE cterm=NONE gui=NONE
 " }}}
+hi def link manPpStart PreProc
+hi def link manPpErr Error
+hi def link manPp Define
+
 HiBold manBword
 HiBold manB2R
 HiBold manB2I
