@@ -18,12 +18,16 @@ It doesn't even use the more advanced
 syntax file as a base.
 .
 .SS This man.vim
+.
+.PP
 This syntax file includes the
 .I "nroff.vim"
 file as a base,
 and it adds additional syntax highlighting specific to common features of
 manpages.
-Currently, it provides adequate syntax highlighting for the
+.
+.PP
+It provides adequate syntax highlighting for the
 .BR bold ,
 .IR italic ,
 .IB "and " "alternating " versions
@@ -32,6 +36,16 @@ It also provides highlighting for the preprocessor line at the top of a
 manpage.
 The highlighting will warn you when an incorrect preprocessor character has
 been entered.
+.PP
+Support for syntax folding is provided.
+Folds will be generated for
+.I .SH
+sections and
+.I .SS
+subsections.
+The fold for sections terminates at the line before the next section,
+and the fold for subsections terminates at the line before the next subsection
+or section.
 .
 .SH SEE ALSO
 .BR man (1) ,
